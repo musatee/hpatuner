@@ -35,6 +35,17 @@ This avoids flapping during unstable incidents and preserves capacity until engi
 
 ---
 
+### Clone the Repository
+
+Clone the codebase to your local machine:
+
+```bash
+git clone https://github.com/musatee/hpatuner.git
+cd hpatuner
+```
+
+---
+
 ### Custom Resource Example
 
 Create a custom resource manifest:
