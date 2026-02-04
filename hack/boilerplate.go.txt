@@ -1,4 +1,6 @@
 /*
-Creator: Md. Abul Kalam Musa
-Let's connect on linkedin.com/in/abul-kalam-musa
+Copyright 2026.
+Project: hpatuner
+Author: Md. Abul Kalam Musa
+Licensed under the Apache License, Version 2.0 (the "License");
 */

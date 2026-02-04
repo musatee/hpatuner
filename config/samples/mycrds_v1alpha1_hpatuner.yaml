@@ -1,0 +1,9 @@
+apiVersion: mycrds.akmusa.com/v1alpha1
+kind: HpaTuner
+metadata:
+  labels:
+    app.kubernetes.io/name: hpatuner
+    app.kubernetes.io/managed-by: kustomize
+  name: hpatuner-sample
+spec:
+  # TODO(user): Add fields here

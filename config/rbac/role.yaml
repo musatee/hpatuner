@@ -1,11 +1,44 @@
+---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  labels:
-    app.kubernetes.io/name: hpatuner
-    app.kubernetes.io/managed-by: kustomize
   name: manager-role
 rules:
-- apiGroups: [""]
-  resources: ["pods"]
-  verbs: ["get", "list", "watch"]
+- apiGroups:
+  - autoscaling
+  resources:
+  - HorizontalPodAutoscaler
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - mycrds.akmusa.com
+  resources:
+  - hpatuners
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - mycrds.akmusa.com
+  resources:
+  - hpatuners/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - mycrds.akmusa.com
+  resources:
+  - hpatuners/status
+  verbs:
+  - get
+  - patch
+  - update

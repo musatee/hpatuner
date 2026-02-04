@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- mycrds_v1alpha1_hpatuner.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples
